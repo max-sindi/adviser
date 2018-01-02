@@ -1,0 +1,56 @@
+-
+ var
+  main = 'profile',
+  companyInputs = ['Maple Leaf Financial Services', '15564651'],
+  companyLegends = ['Company name', 'Company FCA number', 'Advice areas'],
+
+  companyFcaInfo = `The FCA regulates and supervises the conduct of more than
+  50,000 firms in the UK that provide financial products and
+  services to both UK and international customers.`,
+
+  advices = ['Socially responsible investments', 'Traded endowment policies',
+             'Investment trusts', 'Pensions & retirement planning',
+             'Pension consolidation', 'Auto enrolment'];
+
+
+section(class=`${main} section`)
+  .wrapper
+    div(class=`block-title-wp ${main}__title`)
+      h2(class=`block-title`) Your profile details
+    div(class=`${main}-block`)
+
+      // company inputs
+      div(class=`${main}__inputs-wrap inputs-text-wrap`)
+
+        // input wrap
+        div(class=`${main}__input-block input-text-wrap`)
+          div(class="title-like-legend")= companyLegends[0]
+          input(class=`${main}__input input-text border-legend`
+                type="text"
+                placeholder=companyInputs[0]
+                name="company-name")
+
+        // input wrap
+        div(class=`${main}__input-block input-text-wrap`)
+          div(class="title-like-legend")= companyLegends[1]
+          input(class=`${main}__input input-text border-legend`
+                type="text"
+                placeholder=companyInputs[1]
+                name="company-name")
+          // hover help
+          div(class="input-text__help")
+            div(class="input-text__help-text")= companyFcaInfo
+            button(class="input-text__help-icon js-input-help-icon")
+
+      div(class=`${main}__areas-wrap relative`)
+        div(class="title-like-legend")= companyLegends[2]
+        ul(class=`${main}__areas border-legend`)
+
+          each val, i in advices
+            li(class=`${main}__areas-li `)= val
+              button(class=`${main}__areas-li-deleter ion ion-android-close js-areas-deleter`)
+        div(class="input-text__help with-select")
+          div(class="input-text__help-text")= companyFcaInfo
+          button(class="input-text__help-icon js-input-help-icon")
+        div(class="select-items")
+          button(class="select-items__button ion ion-ios-arrow-down")

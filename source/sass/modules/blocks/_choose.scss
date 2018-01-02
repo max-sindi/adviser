@@ -1,0 +1,137 @@
+.choose {
+  // padding-bottom: rem(45);
+}
+.choose-title {
+	margin-bottom: rem(37);
+}
+.choose__item-wrap {
+  position: relative;
+  padding: 20px 0 0;
+}
+.choose-item {
+  height: 100%;
+  padding: 0 15px;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title-block {
+    padding: rem(30) 0 rem(18);
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__title {
+    font-size: rem(40);
+    font-weight: 900;
+    margin-bottom: rem(19);
+    color: $sea-wave_color;
+  }
+
+  &__title-description {
+    font-size: 15px;
+  }
+
+  &__description-part {
+    padding-bottom: rem(50);
+  }
+
+  &__description {
+    padding: 25px 25px 0;
+    text-align: center;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    position: relative;
+    margin-bottom: rem(22);
+    font-size: 13px;
+    line-height: (20/13);
+
+    &:after {
+      content: '.';
+      position: absolute;
+      font-size: 19px;
+      line-height: 4px;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      color: $dots-grey;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__choose-part {
+    padding-bottom: rem(35);
+  }
+} // chooseItem
+
+.choose-item__choose-part.nth-1 {
+  .price-block {
+    &__title {
+      color: $price-grey;
+    }
+  }
+}
+.price-block {
+  margin-bottom: rem(38);
+  text-align: center;
+
+  &__title {
+    color: $orange;
+    font-size: rem(30);
+    margin-bottom: rem(15);
+  }
+
+  &__description {
+    font-size: rem(18);
+    color: $price-grey;
+  }
+}
+
+.choose-button-wp {
+  text-align: center;
+}
+
+
+.choosed-block {
+  position: relative;
+  margin-left: 36px;
+  font-size: 19px;
+  font-weight: 600;
+  color: $orange;
+  text-align: center;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    left: -36px;
+    top: -6px;
+    background: url('../img/check.svg') no-repeat;
+  }
+}
+
+.choose-item__selected-label {
+  position: absolute;
+  top: -10px;
+  width: 104px;
+  height: 23px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-image: url('../img/selected.png');
+  background-repeat: no-repeat;
+}

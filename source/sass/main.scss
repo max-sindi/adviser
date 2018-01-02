@@ -1,0 +1,19 @@
+@import 'modules/normalize'; // v7.0.0
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/base'; // styles of tags
+@import '../fonts/ionicons-2.0.1/scss/ionicons.scss';
+@import 'modules/global'; // service styles (is-hidden, relative, bold etc.)
+@import 'modules/grid';
+
+// this file absorb components(buttons, form-elements etc.)
+@import 'modules/components/main';
+
+// styles of blocks
+@import 'modules/main-styles';
+@import 'modules/states'; // active, disabled etc.
+
+
+@import 'modules/media-md';
+@import 'modules/media-sm';
+@import 'modules/media-xs';

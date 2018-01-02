@@ -1,0 +1,63 @@
+-
+	var
+		main = 'choose',
+		titles = ['Basic', 'Lite', 'Plus'];
+		titleDescription = ['Introductory listing',
+												'Detailed profile with enquiry generation',
+												'Premium profile with additional services'],
+		lists = [
+			[`Appear in our search results` , `Indexed by major search engines `,
+				`No active enquiry generation`],
+			[`Appear more in search results `, `Indexed by major search engines`,
+				` See profile performance statistics`, ` Clients can email you `, `Accept only the enquiries you want`],
+			[`All the benefits of Lite included `, `Full contact details `,
+				`Manage all calls with Call Analytics`,
+				` Exclusive media opportunities through the Bluebook `,
+				`Your first enquiry each month is free`]
+		];
+
+
+section(class=`${main} section`)
+	div.wrapper
+		div(class="block-title-wp choose-title")
+			h2(class="block-title") Choose your plan
+		div(class="choose__variants flex flex-wrap")
+			each val, i in titles
+
+				// wrap for enabling remove padding => increase height
+				div(class="choose__item-wrap third-part")
+					div(class="choose-item flex")
+
+						div(class="choose-item__description-part")
+							// title block
+							div(class="choose-item__title-block text-center")
+								h2(class="choose-item__title")= val
+								div(class="choose-item__title-description")= titleDescription[i]
+
+							// choose_block main
+							div(class="choose-item__description")
+								ul.choose-item__list
+									each val, ii in lists[i]
+										li.choose-item__list-item= lists[i][ii]
+
+						div(class="choose-item__choose-part")
+							if i === 0
+								// price
+								div(class='price-block')
+										div.price-block__title Free
+										div.price-block__description No active enquiry generation
+
+								// button
+								div(class="choose-button-wp")
+									button(class=`main-button	button--white	js-choose-button`
+									       ) Choose #{titles[i]} plan
+							else
+								// price
+								div(class='price-block')
+										div.price-block__title £ 29/month
+										div.price-block__description Plus £30 for each enquiry
+
+								// button
+								div(class="choose-button-wp")
+									button(class=`main-button button--orange js-choose-button`
+									       ) Choose #{titles[i]} plan

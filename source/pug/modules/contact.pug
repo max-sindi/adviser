@@ -1,0 +1,60 @@
+-
+ var
+  main = 'contact',
+  inputsLegends = ['First name', 'Last name', 'Contact email'],
+  inputsPlaceholders = ['Claire', 'Jackson', 'mapleleaf@mail.com'],
+
+  companyFcaInfo = `The FCA regulates and supervises the conduct of more
+  than 50,000 firms in the UK that provide financial products
+  and services to both UK and international customers.`;
+
+
+section(class=`${main} section`)
+  .wrapper
+    div(class=`block-title-wp ${main}__title`)
+      h2(class=`block-title`) Contact person
+    div(class=`${main}-block`)
+      div(class=`${main}__same`)
+        input(
+          class=`${main}__same-checkbox checkbox-sea-color`
+          type="checkbox"
+          name="same-as-adviser-company"
+          id="same-as"
+          )
+        label(class=`${main}__same-label checkbox-label`
+              for="same-as")
+              |
+              | Same as adviser above
+
+      // inputs block
+      div(class=`${main}__inputs-wrap inputs-text-wrap`)
+
+        // input wrap 1
+        div(class=`${main}__input-block input-text-wrap disabled`)
+          div(class="title-like-legend")= inputsLegends[0]
+          input(class=`${main}__input input-text border-legend`
+                type="text"
+                placeholder=inputsPlaceholders[0]
+                name="fist-name"
+                disabled)
+
+        // input wrap 2
+        div(class=`${main}__input-block input-text-wrap disabled`)
+          div(class="title-like-legend")= inputsLegends[1]
+          input(class=`${main}__input input-text border-legend`
+                type="text"
+                placeholder=inputsPlaceholders[1]
+                name="last-name"
+                disabled)
+
+        // input wrap 3
+        div(class=`${main}__input-block input-text-wrap`)
+          div(class="title-like-legend")= inputsLegends[2]
+          input(class=`${main}__input input-text border-legend`
+                type="email"
+                placeholder=inputsPlaceholders[2]
+                name="email-name")
+          // hover help
+          div(class="input-text__help")
+            div(class="input-text__help-text")= companyFcaInfo
+            button(class="input-text__help-icon js-input-help-icon")

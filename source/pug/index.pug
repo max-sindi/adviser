@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet")
+		link(href="css/main.css" rel="stylesheet")
+		title Document
+body.body
+
+	div(class='top-block wrapper text-center')
+		h1(class='top-block__title extra-bold') Adviser registration
+		p( class="top-block__content") Please follow this wizard and you will be ready in 2 minutes.
+
+	div(class='logo-block center-block')
+		img( class="logo-img center-block" src="img/logo.png")
+
+	include modules/choosing-block
+	include modules/profile-detail
+	include modules/contact
+	include modules/password
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	script(src="js/bundle.min.js")

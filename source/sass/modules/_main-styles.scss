@@ -1,0 +1,131 @@
+
+html {
+  font-size: $html-fz;
+}
+
+@media (max-width: $md) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $sm) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: ($xs)) {
+  html {
+    font-size: 11px;
+  }
+}
+
+$pad-top: (12rem/16);
+.body {
+  background-color: #fff;
+  color: $text-grey;
+  font-family: $lato-font;
+  padding-top: (95rem/16) - $pad-top;
+  padding-bottom: 100px;
+  line-height: 1;
+}
+
+.section {
+  padding: rem(45) 0;
+}
+
+.top-block__title {
+  margin: $pad-top 0;
+  font-size: (60rem/16);
+  color: $title-color;
+}
+.top-block__content {
+  font-size: (26rem/16);
+  padding-bottom: (21rem/16);
+  color: $title-color;
+}
+
+.logo-block {
+  margin-bottom: (53rem/16);
+  max-width: 279px;
+  width: 100%;
+}
+.logo-img {
+  display: block;
+  width: 100%;
+}
+
+
+.block-title {
+  display: inline-block;
+  padding: 0 15px;
+  background-color: #fff;
+  z-index: 2;
+  font-size: 32px;
+  font-weight: 900;
+  color: $title-color;
+  text-align: center;
+
+  &-wp {
+    position: relative;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    &:before {
+      content: ' ';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      margin: auto;
+      background-color: $title-string;
+    }
+  }
+}
+
+
+// choose-your-plan block
+@import 'blocks/choose';
+
+// profile-details block
+@import 'blocks/_profile-details.scss';
+
+
+// contact-person block
+@import 'blocks/_contact.scss';
+
+// password block
+.password {
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__checkboxes {
+    margin-bottom: 42px;
+  }
+  &__checkbox-row {
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    font-size: 15px;
+    color: #242424;
+  }
+  &__complete-button {
+    font-size: rem(22);
+    margin-bottom: rem(37);
+    white-space: normal;
+    line-height: 20px;
+  }
+  &__button-label {
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+    color: #242424;
+  }
+}

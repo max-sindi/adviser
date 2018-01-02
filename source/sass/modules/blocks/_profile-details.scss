@@ -1,0 +1,42 @@
+.profile {
+  &__title {
+		margin-bottom: 25px;
+	}
+
+  &__inputs-wrap {
+  }
+
+  &__areas-wrap {
+    padding-bottom: rem(30);
+  }
+
+  &__areas { // ul
+    padding: 11px;
+    list-style: none;
+    padding-right: 60px;
+  }
+  &__areas-li {
+    display: inline-block;
+    margin: 10px 1px;
+    padding: 8px 13px;
+    font-size: 15px;
+    background-color: #ecf6f9;
+    border-radius: 15px;
+  }
+  &__areas-li-deleter {
+    padding: 0 3px;
+    font-size: 14px;
+    color: #c0d6dc;
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    &:focus {
+      outline: 0;
+      border-radius: 50%;
+      border-color: rgba($sea-wave-color, 0.5);
+    }
+  }
+
+}
+
+

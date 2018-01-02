@@ -1,0 +1,39 @@
+@media (max-width: $md) {
+
+	.body {
+		padding-top: 1rem;
+	}
+  .choose__item-wrap {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .choose-item {
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.1);
+
+  	&__description-part {
+  		padding-bottom: 2rem;
+  	}
+  }
+
+
+  // prevent jumping when item was choosed
+  .choose__variants.has-activated-item {
+    padding-top: 20px; // .choose__item-wrap: padding-top = 20px;
+    .choose__item-wrap {
+      // 62px = height of each button, which become hidden
+      // 2 rem = already existing margin-bottom of it class
+      margin-bottom: calc(62px + 2rem);
+    }
+  }
+
+.inputs-text-wrap {
+  flex-wrap: wrap;
+
+  .input-text-wrap {
+    width: 100%;
+  }
+}
+
+
+
+}
