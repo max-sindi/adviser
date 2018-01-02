@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <title>Document</title>
+  </head>
+</html>
+<body class="body">
+  <div class="top-block wrapper text-center">
+    <h1 class="top-block__title extra-bold">Adviser registration</h1>
+    <p class="top-block__content">Please follow this wizard and you will be ready in 2 minutes.</p>
+  </div>
+  <div class="logo-block center-block"><img class="logo-img center-block" src="img/logo.png"/></div>
+  <section class="choose section">
+    <div class="wrapper">
+      <div class="block-title-wp choose-title">
+        <h2 class="block-title">Choose your plan</h2>
+      </div>
+      <div class="choose__variants flex flex-wrap">
+        <!-- wrap for enabling remove padding => increase height-->
+        <div class="choose__item-wrap third-part">
+          <div class="choose-item flex">
+            <div class="choose-item__description-part">
+              <!-- title block-->
+              <div class="choose-item__title-block text-center">
+                <h2 class="choose-item__title">Basic</h2>
+                <div class="choose-item__title-description">Introductory listing</div>
+              </div>
+              <!-- choose_block main-->
+              <div class="choose-item__description">
+                <ul class="choose-item__list">
+                  <li class="choose-item__list-item">Appear in our search results</li>
+                  <li class="choose-item__list-item">Indexed by major search engines </li>
+                  <li class="choose-item__list-item">No active enquiry generation</li>
+                </ul>
+              </div>
+            </div>
+            <div class="choose-item__choose-part">
+              <!-- price-->
+              <div class="price-block">
+                <div class="price-block__title">Free</div>
+                <div class="price-block__description">No active enquiry generation</div>
+              </div>
+              <!-- button-->
+              <div class="choose-button-wp">
+                <button class="main-button	button--white	js-choose-button">Choose Basic plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- wrap for enabling remove padding => increase height-->
+        <div class="choose__item-wrap third-part">
+          <div class="choose-item flex">
+            <div class="choose-item__description-part">
+              <!-- title block-->
+              <div class="choose-item__title-block text-center">
+                <h2 class="choose-item__title">Lite</h2>
+                <div class="choose-item__title-description">Detailed profile with enquiry generation</div>
+              </div>
+              <!-- choose_block main-->
+              <div class="choose-item__description">
+                <ul class="choose-item__list">
+                  <li class="choose-item__list-item">Appear more in search results </li>
+                  <li class="choose-item__list-item">Indexed by major search engines</li>
+                  <li class="choose-item__list-item"> See profile performance statistics</li>
+                  <li class="choose-item__list-item"> Clients can email you </li>
+                  <li class="choose-item__list-item">Accept only the enquiries you want</li>
+                </ul>
+              </div>
+            </div>
+            <div class="choose-item__choose-part">
+              <!-- price-->
+              <div class="price-block">
+                <div class="price-block__title">£ 29/month</div>
+                <div class="price-block__description">Plus £30 for each enquiry</div>
+              </div>
+              <!-- button-->
+              <div class="choose-button-wp">
+                <button class="main-button button--orange js-choose-button">Choose Lite plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- wrap for enabling remove padding => increase height-->
+        <div class="choose__item-wrap third-part">
+          <div class="choose-item flex">
+            <div class="choose-item__description-part">
+              <!-- title block-->
+              <div class="choose-item__title-block text-center">
+                <h2 class="choose-item__title">Plus</h2>
+                <div class="choose-item__title-description">Premium profile with additional services</div>
+              </div>
+              <!-- choose_block main-->
+              <div class="choose-item__description">
+                <ul class="choose-item__list">
+                  <li class="choose-item__list-item">All the benefits of Lite included </li>
+                  <li class="choose-item__list-item">Full contact details </li>
+                  <li class="choose-item__list-item">Manage all calls with Call Analytics</li>
+                  <li class="choose-item__list-item"> Exclusive media opportunities through the Bluebook </li>
+                  <li class="choose-item__list-item">Your first enquiry each month is free</li>
+                </ul>
+              </div>
+            </div>
+            <div class="choose-item__choose-part">
+              <!-- price-->
+              <div class="price-block">
+                <div class="price-block__title">£ 29/month</div>
+                <div class="price-block__description">Plus £30 for each enquiry</div>
+              </div>
+              <!-- button-->
+              <div class="choose-button-wp">
+                <button class="main-button button--orange js-choose-button">Choose Plus plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="profile section">
+    <div class="wrapper">
+      <div class="block-title-wp profile__title">
+        <h2 class="block-title">Your profile details</h2>
+      </div>
+      <div class="profile-block">
+        <!-- company inputs-->
+        <div class="profile__inputs-wrap inputs-text-wrap">
+          <!-- input wrap-->
+          <div class="profile__input-block input-text-wrap">
+            <div class="title-like-legend">Company name</div>
+            <input class="profile__input input-text border-legend" type="text" placeholder="Maple Leaf Financial Services" name="company-name"/>
+          </div>
+          <!-- input wrap-->
+          <div class="profile__input-block input-text-wrap">
+            <div class="title-like-legend">Company FCA number</div>
+            <input class="profile__input input-text border-legend" type="text" placeholder="15564651" name="company-name"/>
+            <!-- hover help-->
+            <div class="input-text__help">
+              <div class="input-text__help-text">The FCA regulates and supervises the conduct of more than
+ 50,000 firms in the UK that provide financial products and
+ services to both UK and international customers.</div>
+              <button class="input-text__help-icon js-input-help-icon"></button>
+            </div>
+          </div>
+        </div>
+        <div class="profile__areas-wrap relative">
+          <div class="title-like-legend">Advice areas</div>
+          <ul class="profile__areas border-legend">
+            <li class="profile__areas-li ">Socially responsible investments
+              <button class="profile__areas-li-deleter ion ion-android-close js-areas-deleter"></button>
+            </li>
+            <li class="profile__areas-li ">Traded endowment policies
+              <button class="profile__areas-li-deleter ion ion-android-close js-areas-deleter"></button>
+            </li>
+            <li class="profile__areas-li ">Investment trusts
+              <button class="profile__areas-li-deleter ion ion-android-close js-areas-deleter"></button>
+            </li>
+            <li class="profile__areas-li ">Pensions &amp; retirement planning
+              <button class="profile__areas-li-deleter ion ion-android-close js-areas-deleter"></button>
+            </li>
+            <li class="profile__areas-li ">Pension consolidation
+              <button class="profile__areas-li-deleter ion ion-android-close js-areas-deleter"></button>
+            </li>
+            <li class="profile__areas-li ">Auto enrolment
+              <button class="profile__areas-li-deleter ion ion-android-close js-areas-deleter"></button>
+            </li>
+          </ul>
+          <div class="input-text__help with-select">
+            <div class="input-text__help-text">The FCA regulates and supervises the conduct of more than
+ 50,000 firms in the UK that provide financial products and
+ services to both UK and international customers.</div>
+            <button class="input-text__help-icon js-input-help-icon"></button>
+          </div>
+          <div class="select-items">
+            <button class="select-items__button ion ion-ios-arrow-down"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact section">
+    <div class="wrapper">
+      <div class="block-title-wp contact__title">
+        <h2 class="block-title">Contact person</h2>
+      </div>
+      <div class="contact-block">
+        <div class="contact__same">
+          <input class="contact__same-checkbox checkbox-sea-color" type="checkbox" name="same-as-adviser-company" id="same-as"/>
+          <label class="contact__same-label checkbox-label" for="same-as">
+            
+            Same as adviser above
+          </label>
+        </div>
+        <!-- inputs block-->
+        <div class="contact__inputs-wrap inputs-text-wrap">
+          <!-- input wrap 1-->
+          <div class="contact__input-block input-text-wrap disabled">
+            <div class="title-like-legend">First name</div>
+            <input class="contact__input input-text border-legend" type="text" placeholder="Claire" name="fist-name" disabled="disabled"/>
+          </div>
+          <!-- input wrap 2-->
+          <div class="contact__input-block input-text-wrap disabled">
+            <div class="title-like-legend">Last name</div>
+            <input class="contact__input input-text border-legend" type="text" placeholder="Jackson" name="last-name" disabled="disabled"/>
+          </div>
+          <!-- input wrap 3-->
+          <div class="contact__input-block input-text-wrap">
+            <div class="title-like-legend">Contact email</div>
+            <input class="contact__input input-text border-legend" type="email" placeholder="mapleleaf@mail.com" name="email-name"/>
+            <!-- hover help-->
+            <div class="input-text__help">
+              <div class="input-text__help-text">The FCA regulates and supervises the conduct of more
+ than 50,000 firms in the UK that provide financial products
+ and services to both UK and international customers.</div>
+              <button class="input-text__help-icon js-input-help-icon"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="password section">
+    <div class="wrapper">
+      <div class="block-title-wp password__title">
+        <h2 class="block-title">Your password</h2>
+      </div>
+      <div class="password-block">
+        <!-- inputs block-->
+        <div class="password__inputs-wrap inputs-text-wrap">
+          <!-- input wrap 1-->
+          <div class="password__input-block input-text-wrap">
+            <div class="title-like-legend">Password</div>
+            <input class="password__input input-text input-password border-legend" type="password" name="password"/>
+          </div>
+          <!-- input wrap 2-->
+          <div class="password__input-block input-text-wrap">
+            <div class="title-like-legend">Confirm password</div>
+            <input class="password__input input-text input-password border-legend" type="password" name="confirm-password"/>
+          </div>
+        </div>
+        <!-- checkboxes-->
+        <div class="password__checkboxes">
+          <!-- checkbox row-->
+          <div class="password__checkbox-row">
+            <input class="password__checkbox checkbox-sea-color" type="checkbox" name="tips-on" id="tips-on"/>
+            <label class="password__label checkbox-label" for="tips-on">Tick if you want to get tips on on how to improve your profile
+ visibility and some real statistics</label>
+          </div>
+          <!-- checkbox row-->
+          <div class="password__checkbox-row">
+            <input class="password__checkbox checkbox-sea-color" type="checkbox" name="more-useful" id="more-useful"/>
+            <label class="password__label checkbox-label" for="more-useful">Tick if you want to get someting even more useful</label>
+          </div>
+        </div>
+        <div class="password__complete">
+          <div class="password__complete-button-wrap">
+            <input class="password__complete-button main-button button--orange" value="Complete signup and proceed to payment" type="submit" name="agree"/>
+            <p class="password__button-label">By clicking &quot;Complete signup and proceed to payment&quot;
+ I agree to Unbiased's Terms of Service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bundle.min.js"></script>
+</body>
