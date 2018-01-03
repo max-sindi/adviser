@@ -527,7 +527,8 @@ input[type="submit"] {
 
 .input-text {
   padding: 17px 20px;
-  font-size: 18px; }
+  font-size: 18px;
+  background-color: #fff; }
   .input-text::-webkit-input-placeholder {
     color: #4d4d4d; }
   .input-text::-moz-placeholder {
