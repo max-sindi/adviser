@@ -557,9 +557,8 @@ input[type="submit"] {
       display: inline-block;
       width: 16px;
       height: 16px;
-      padding: 5px;
       box-sizing: content-box;
-      background: transparent url("../img/help-icon.png") no-repeat center center;
+      background: url("../img/help-icon.png") no-repeat center center;
       border: none;
       cursor: pointer; }
       .input-text__help-icon:focus {
