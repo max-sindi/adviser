@@ -15,10 +15,11 @@ body.body
 	div(class='logo-block center-block')
 		img( class="logo-img center-block" src="img/logo.png")
 
-	include modules/choosing-block
-	include modules/profile-detail
-	include modules/contact
-	include modules/password
+	form
+		include modules/choosing-block
+		include modules/profile-detail
+		include modules/contact
+		include modules/password
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	script(src="js/bundle.min.js")
