@@ -428,7 +428,7 @@ input[type="submit"] {
   font-weight: normal;
   font-style: normal; }
 
-.ion, .checkbox-sea-color:before {
+.ion {
   display: inline-block;
   font-family: "Ionicons";
   speak: none;
@@ -541,7 +541,7 @@ input[type="submit"] {
     color: #4d4d4d; }
   .input-text__help {
     position: absolute;
-    bottom: calc(50% - 13px);
+    bottom: calc(50% - 10px);
     right: 10px;
     width: 26px;
     text-align: center; }
