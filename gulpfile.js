@@ -66,6 +66,7 @@ gulp.task('sass:compile', function() {
 
 gulp.task('js', function() {
 	return gulp.src('./source/js/*.js')
+		.pipe(rename('bundle.js'))
 		.pipe(gulp.dest(`${buildPath}/js/`));
 })
 
@@ -89,7 +90,7 @@ gulp.task("default", function() {
 		gulp.watch('source/sass/**/*.scss', ['sass:compile']);
 		gulp.watch('source/less/**/*.less', ['less:compile']);
 		gulp.watch('source/pug/**/*.pug',   ['pug:dev']);
-		gulp.watch('source/js/*.js',        ['js:build']);
+		gulp.watch('source/js/*.js',        ['js']);
 		gulp.watch('source/img/**/*.*',     ['img']);
 
 		gulp.watch(`${buildPath}/**/*.*`).on('change', browserSync.reload);
